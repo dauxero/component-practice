@@ -6,10 +6,9 @@ import { ThirdComponent } from "./components/ThirdComponent";
 
 function App() {
   const medicalRecord = {
-    height: "160",
-    bloodGroup: "RhO+",
+    height: "190",
+    bloodGroup: "O+",
     allergies: "None",
-    dad: "dasd",
   };
 
   return (
@@ -18,7 +17,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Estructura inicial del proyecto y limpia.</p>
         <SecondComponent />
-        <ThirdComponent name="Inés" lastName="Oliveros" card={medicalRecord} />
+        <ThirdComponent
+          name="Carlos"
+          lastName="Gonzalez"
+          card={medicalRecord}
+        />
         <MyComponent />
       </header>
     </div>
