@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 export const ThirdComponent = ({ name, lastName, card }) => {
   const { height, bloodGroup, allergies } = card;
 
@@ -17,4 +17,9 @@ export const ThirdComponent = ({ name, lastName, card }) => {
   );
 };
 
-// Hooks - eventos
+//? validador de tipo de dato
+ThirdComponent.propTypes = {
+  name: PropTypes.string,
+  lastName: PropTypes.string,
+  card: PropTypes.object,
+};
