@@ -8,11 +8,18 @@ const Child = ({ name, addMessage, setmessage }) => {
   const changeName = () => {
     setmessage("Nuevo Nombre hijo");
   };
+
+  
   return (
     <div>
       <p>{name}</p>
-      <button onClick={sendMessage}>Enviar nuevo mensaje</button>
-      <button onClick={changeName}>Cambiar nombre</button>
+      <div>
+        <button onClick={sendMessage}>Enviar nuevo mensaje</button>
+      </div>
+      <div>
+        <button onClick={changeName}>Cambiar nombre</button>
+      </div>
+      
     </div>
   );
 };
